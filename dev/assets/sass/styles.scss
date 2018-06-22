@@ -1,0 +1,30 @@
+@import 'settings';
+@import 'fonts';
+@import 'mixins';
+@import 'reset';
+
+body{
+color: $mainwhite;
+  font-family: $echobold;
+}
+.container{
+  margin: 0 auto;
+  padding: 0 23px;
+  @include media($width-xs){
+    padding: 0 33px;
+  }
+  @include media($width-mid){
+    padding: 0 50px;
+  }
+  @include media($width-max){
+    padding: 0 115px;
+  }
+}
+
+@import "../../components/header/_header.scss";
+@import "../../components/navmenu/_navmenu.scss";
+@import "../../components/slider/_slider.scss";
+@import "../../components/banner/_banner.scss";
+@import "../../components/study/_study.scss";
+@import "../../components/forwhat/_forwhat.scss";
+@import "../../components/footer/_footer.scss";
