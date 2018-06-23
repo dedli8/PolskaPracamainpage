@@ -1,0 +1,28 @@
+.main-advanteges{
+  border-bottom: 1px solid $mainwhite;
+  background-image: none;
+  position: relative;
+  overflow: auto;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -5%;
+    right: -5%;
+    top: -5%;
+    bottom: -5%;
+    z-index: -1;
+    display: block;
+    background-image: url('img/dealbg1700.jpg');
+    background-size: cover;
+    width: 110%;
+    height: 110%;
+    filter: blur(5px);
+    @include media($width-max){
+      filter: none;
+    }
+  }
+
+  .forwhat-title{
+    color: $mainred;
+  }
+}

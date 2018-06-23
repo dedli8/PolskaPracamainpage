@@ -83,6 +83,7 @@
   color: $mainwhite;
   border-radius: 9px;
   font-size: 16.67px;
+  text-transform: uppercase;
   @include media($width-xs) {
     width: 168px;
     height: 51px;
