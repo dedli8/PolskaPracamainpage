@@ -2,7 +2,15 @@
   border-bottom: 1px solid $mainwhite;
   background-image: none;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
+  padding: 19px 0 25px 0;
+  @include media($width-xs){
+    padding: 29px 0 27px 0;
+  }
+  @include media($width-mid){
+    font-size: 36.81px;
+    padding: 46px 0 88px 0;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -24,5 +32,26 @@
 
   .forwhat-title{
     color: $mainred;
+    font-size: 30.72px;
+    margin-bottom: 18px;
+    @include media($width-xs){
+      font-size: 32.73px;
+    }
+    @include media($width-mid){
+      font-size: 66.67px;
+    }
+  }
+  .forwhat-text{
+    line-height: 19px;
+    width: 100%;
+    margin-bottom: 20px;
+    @include media($width-xs){
+       line-height: 20px;
+       margin-bottom: 17px;
+     }
+    @include media($width-mid){
+      line-height: 43px;
+      margin-bottom: 48px;
+    }
   }
 }
