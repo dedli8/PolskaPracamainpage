@@ -1,15 +1,19 @@
 .main-advanteges{
-  border-bottom: 1px solid $mainwhite;
+  border-bottom: 2px solid $mainwhite;
   background-image: none;
   position: relative;
   overflow: hidden;
-  padding: 19px 0 25px 0;
+  padding: 18px 0 25px 0;
   @include media($width-xs){
     padding: 29px 0 27px 0;
   }
   @include media($width-mid){
     font-size: 36.81px;
-    padding: 46px 0 88px 0;
+    padding: 46px 0 89px 0;
+  }
+  @include media($width-max){
+    font-size: 36.81px;
+    padding: 68px 0 69px 0;
   }
   &:before {
     content: "";
@@ -40,6 +44,19 @@
     @include media($width-mid){
       font-size: 66.67px;
     }
+    @include media($width-max){
+      font-family: $echo;
+      font-size: 50px;
+      color: $mainwhite;
+      margin-bottom: 53px;
+    }
+  }
+  .forwhat-text-box{
+    @include media($width-max) {
+      column-count: 1;
+      width: 50.7%;
+      float: right;
+    }
   }
   .forwhat-text{
     line-height: 19px;
@@ -52,6 +69,20 @@
     @include media($width-mid){
       line-height: 43px;
       margin-bottom: 48px;
+    }
+    @include media($width-max){
+      font-size: 26.48px;
+      line-height: 29px;
+      margin-bottom: 25px;
+    }
+  }
+  .forwhat-disk{
+    @include media($width-max) {
+      background-color: #dc0a0c;
+      width: 6px;
+      height: 6px;
+      margin-right: 9px;
+      top: 10px;
     }
   }
 }

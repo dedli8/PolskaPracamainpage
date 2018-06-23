@@ -30,6 +30,8 @@
   }
   .mySlides{
     .study-img{
+      display: block;
+      margin: 0 auto;
       margin-bottom: 8px;
       @include media($width-xs){
         margin-bottom: 12px;
@@ -38,8 +40,6 @@
         margin-bottom: 31px;
       }
       @include media($width-max){
-        display: block;
-        margin: 0 auto;
         margin-bottom: 20px;
       }
     }
